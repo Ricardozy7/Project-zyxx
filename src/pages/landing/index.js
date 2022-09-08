@@ -1,5 +1,5 @@
 import NavBar from "../../components/navbar";
-import { Header, NextLevel } from "./contents"
+import { Header, NextLevel, Projetcs } from "./contents"
 import { Box } from "@mui/material"
 import "../../assets/scss/projectzy.scss";
 
@@ -13,6 +13,7 @@ const Landing = () => {
             <NavBar />
             <Header />
             <NextLevel />
+            <Projetcs />
         </Box>
     )
 }
