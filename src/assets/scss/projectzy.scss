@@ -1,0 +1,14 @@
+@font-face {
+    font-family: futureforcesrtitle;
+    src: url(../fonts/futureforcesrtitle.ttf);
+}
+
+@font-face {
+    font-family: Future;
+    src: url(../fonts/FutureZ.ttf);
+}
+
+.divider-gradient{
+    background: linear-gradient(90deg, rgba(2,175,129,1) 0%, rgba(1,102,75,1) 80%, rgba(0,0,0,1) 100%);
+    height: 2;
+}
