@@ -53,15 +53,16 @@ export function Header() {
         margin-top: -50px;
         background: rgba(255, 255, 255, 0);
         border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px); */
     `
 
 
     const TexHeading = styled.h2`
         margin-left: 5%;
         font-size: 120px;
+        /* background-color: #02af81; */
         font-weight: 300;
         color: #ccc;
         text-transform: uppercase;
@@ -69,7 +70,7 @@ export function Header() {
 
     const TextConteiner = styled.div`
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
         height: 100%;
         align-items: center;
@@ -103,6 +104,11 @@ export function Header() {
         setResize({ height: window.innerHeight, width: window.innerWidth })
     }, [])
 
+    const ContainerBoxText = styled.div`
+        display: flex;
+        flex-direction: row;
+    `
+
     return (
         <Section>
             <VideoContainer>
@@ -111,8 +117,13 @@ export function Header() {
                 </video>
                 <HeadingBox>
                     <TextConteiner>
-                        <TexHeading>PROJECT</TexHeading>
-                        <TexHeading className={styles.subtitle}>ZYXX</TexHeading>
+                        <ContainerBoxText>
+                            <TexHeading>
+                                PROJECT
+                                <div style={{ width: "50%", height: 2 }} className="divider-gradient"></div>
+                            </TexHeading>
+                            <TexHeading className={styles.subtitle}>ZYXX</TexHeading>
+                        </ContainerBoxText>
                     </TextConteiner>
                     <Footer>
                         <TexFooterConteiner>

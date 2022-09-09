@@ -1,3 +1,4 @@
+
 import { Container, Grid } from "@mui/material"
 import styled, { keyframes } from 'styled-components'
 
@@ -33,7 +34,7 @@ export const NextLevel = () => {
             overflow: 'hidden'
         }}>
             <Grid container>
-                <Grid xs={6}>
+                <Grid xs={12} sm={12} md={6}>
                     <TexHeading>
                         <div>
                         NEXT LEVEL
@@ -58,13 +59,15 @@ export const NextLevel = () => {
                             mode="VERTICAL_ALTERNATING" />
                     </div>
                 </Grid>
-                <Grid xs={6}>
+                <Grid xs={12} sm={12} md={6}
+                >
                     <SubtitleHeading>
-                        Especialize-se através de um método eficiente, com as melhores linguagens de
-                        programação do momento que vão te destacar como profissional.
-                        e te destacar para que você alcance o <strong style={{ color: '#02af81' }}>next level</strong>.
+                    Specialize through an efficient method, with the best programming languages 
+                    ​​of the moment that will make you stand out as a professional. 
+                    and make you stand out so you can reach the <strong style={{ color: '#02af81' }}>next level</strong>.
                     </SubtitleHeading>
-                    <Grid height="100%" container justify="center" alignItems="center">
+                    <Grid className="mobile_hidden"
+                    height="100%" container justify="center" alignItems="center">
                         <Lottie options={{
                             animationData: Rocket
                         }}

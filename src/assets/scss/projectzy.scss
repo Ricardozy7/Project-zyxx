@@ -8,7 +8,58 @@
     src: url(../fonts/FutureZ.ttf);
 }
 
+@font-face {
+    font-family: Venus;
+    src: url(../fonts/venusrisingrg.ttf);
+}
+
+@font-face {
+    font-family: LEMONMILK;
+    src: url(../fonts/Gen-Light.otf);
+}
+
+
+body {
+    overscroll-behavior-y: none;
+  }
+  
+
 .divider-gradient{
-    background: linear-gradient(90deg, rgba(2,175,129,1) 0%, rgba(1,102,75,1) 80%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, #02af81 0%, rgba(1,102,75,1) 80%, rgba(0,0,0,1) 100%);
     height: 2;
 }
+
+.cursor-animate{
+    z-index: 46548789754165;
+    position: fixed;
+    background-color: #02af81;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 15px #01664b,
+                0 0 15px #01664b,
+                0 0 15px #01664b;
+}
+
+.App {
+    // position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    .scroll {
+      padding: 2vh 0;
+      pointer-events: none;
+    }
+  }
+
+  @media screen and (max-width: 720px)
+  {
+    .mobile_hidden
+     {
+      display: none;
+     }
+  }
